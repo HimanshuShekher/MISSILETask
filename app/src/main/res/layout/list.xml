@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/mission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mission_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"
+
+            android:textStyle="bold"/>
+
+
+
+        <TextView
+            android:id="@+id/missionName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+
+            app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toEndOf="@id/mission"
+            app:layout_constraintEnd_toStartOf="@id/favorite"
+            android:layout_margin="10dp"
+
+           />
+
+        <ImageView
+            android:id="@+id/favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/baseline_favorite_border_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/rocket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rocket_name"
+            app:layout_constraintTop_toBottomOf="@id/missionName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="10dp"
+
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/rocketName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintTop_toTopOf="@id/rocket"
+            app:layout_constraintBottom_toBottomOf="@id/rocket"
+            app:layout_constraintStart_toEndOf="@id/rocket"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/launchYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2000"
+            android:layout_margin="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rocketName"
+
+            />
+        <TextView
+            android:id="@+id/launch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/launch_year"
+            app:layout_constraintEnd_toStartOf="@id/launchYear"
+           app:layout_constraintBottom_toBottomOf="@id/launchYear"
+            app:layout_constraintTop_toTopOf="@id/launchYear"
+
+            android:textStyle="bold"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

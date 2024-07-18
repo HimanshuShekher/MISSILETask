@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.DetailsFragment">
+
+
+    <TextView
+        android:id="@+id/mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mission_name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/missionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/mission"
+       app:layout_constraintStart_toEndOf="@id/mission"
+        app:layout_constraintTop_toTopOf="@id/mission"/>
+
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mission_name"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@id/missionName"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/launchDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/date"
+        app:layout_constraintStart_toEndOf="@id/date"
+        app:layout_constraintTop_toTopOf="@id/date"/>
+
+
+    <TextView
+        android:id="@+id/detailspayload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payload Details:-"
+        app:layout_constraintTop_toBottomOf="@id/launchDate"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+    <TextView
+        android:id="@+id/nation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mission_name"
+        app:layout_constraintTop_toBottomOf="@id/detailspayload"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+  <TextView
+      android:id="@+id/nationality"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text=""
+      app:layout_constraintTop_toTopOf="@id/nation"
+      app:layout_constraintBottom_toBottomOf="@id/nation"
+      app:layout_constraintStart_toEndOf="@id/nation"/>
+
+
+
+    <TextView
+        android:id="@+id/manu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manufacturer : "
+        app:layout_constraintTop_toBottomOf="@id/nationality"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/manufacturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toTopOf="@id/manu"
+        app:layout_constraintBottom_toBottomOf="@id/manu"
+        app:layout_constraintStart_toEndOf="@id/manu"/>
+
+
+    <TextView
+        android:id="@+id/payload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payload Type : "
+        app:layout_constraintTop_toBottomOf="@id/manufacturer"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/payloadType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toTopOf="@id/payload"
+        app:layout_constraintBottom_toBottomOf="@id/payload"
+        app:layout_constraintStart_toEndOf="@id/payload"/>
+
+
+
+    <TextView
+        android:id="@+id/payload_mass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payload Mass KG : "
+        app:layout_constraintTop_toBottomOf="@id/payloadType"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/payload_mass_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toTopOf="@id/payload_mass"
+        app:layout_constraintBottom_toBottomOf="@id/payload_mass"
+        app:layout_constraintStart_toEndOf="@id/payload_mass"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
